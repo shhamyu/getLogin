@@ -1,0 +1,14 @@
+/* Style buttons */
+.btn {
+  background-color: #FFFFFF; /* Blue background */
+  border: none; /* Remove borders */
+  color: #000000; /* White text */
+
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color:#4682B4; ;
+}

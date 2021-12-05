@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login page</title>
+  <script type="text/javascript">
+    function login() {
+      var email = document.getElementById("email").value;
+      var pass = document.getElementById("pass").value;
+      var type = document.getElementById("type").value;
+
+      if ((email == "admin@gmail.com") && (pass = "admin")) {
+        alert(email);
+        alert(pass);
+        window.location.assign("admin.html");
+
+      } else if ((email == "user@gmail.com") && (pass = "user")) {
+        alert(email);
+        alert(pass);
+        window.location.assign("form.html");
+      } else {
+
+        window.location.assign("login.html");
+        alert("please enter valid id ");
+      }
+
+    }
+  </script>
+  <link rel="stylesheet" href="lo.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-2"></div>
+      <div class="col-lg-6 col-md-8 login-box">
+        <div class="col-lg-12 login-key">
+          <i class="fa fa-key" aria-hidden="true"></i>
+        </div>
+        <div class="col-lg-12 login-title ">
+          LOGIN PANEL
+        </div>
+
+        <div class="col-lg-12 login-form main1">
+          <div class="col-lg-12 login-form main">
+
+            <form action="login.html" method="post">
+              <div class="form-group">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="form-control-label">
+                          <h2>Enter Email :</h2>
+                        </label>
+                      </td>
+                      <td>
+                        <input type="email" id="email" value="" class="form-control">
+                      </td>
+                    </tr>
+              </div>
+              <div class="form-group">
+                <tr>
+                  <td>
+                    <label class="form-control-label">
+                      <h2>Enter Password :</h2>
+                    </label>
+                  </td>
+                  <td>
+                    <input type="password"id="pass" value="" class="form-control">
+                  </td>
+                </tr>
+              </div>
+              <tr>
+                <td>
+                  <label class="form-control-label">
+                    <h2>Select Type :</h2>
+                  </label>
+                </td>
+                <td>
+                  <select class="" id="type" name="">
+                    <option value="">admin</option>
+                    <option value="">user</option>
+                  </select>
+                </td>
+              </tr>
+              <div class="col-lg-12 loginbttm">
+                <div class="col-lg-6 login-btm login-text">
+                  <!-- Error Message -->
+                </div>
+                <div class="col-lg-6 login-btm login-button">
+                  <tr>
+                    <td>
+                      <button onclick="login()" type="button" name=" button" class="btn btn-outline-primary"> LOGIN </button>
+                    </td>
+
+                  </tr>
+                </div>
+              </div>
+
+              </tbody>
+              </table>
+            </form>
+          </div>
+    </div>
+    <div class="col-lg-3 col-md-2"></div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
